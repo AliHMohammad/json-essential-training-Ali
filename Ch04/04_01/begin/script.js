@@ -3,7 +3,9 @@ const protectedData = 'while(1);[{"id":"259","name":"Raspberry Mineral Water","d
 console.log(protectedData);
 
 // add statement to clean protected data
-const cleanData = rawData => rawData.slice(9);
+function cleanData(rawData) {
+   return rawData.slice(9);
+}
 
 // update statement to parse cleaned data
 const data = JSON.parse(cleanData(protectedData));
@@ -27,6 +29,18 @@ const populate = (arr) => {
   container.innerHTML += content;
 };
 
+
+function testIfDataEmpty(data) {
+  if (Object.keys(data).length === 0 && data.constructor === Object) {
+      console.log("Empty Object:");
+      return data;
+  } else {
+      console.log("Not an Empty Object:");
+      return data;
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   populate(data);
+  testIfDataEmpty(data);
 });

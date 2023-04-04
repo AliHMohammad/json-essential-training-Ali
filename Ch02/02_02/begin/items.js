@@ -3,7 +3,11 @@ const products = '[{"id":"530","name":"Bamboo Thermal Ski Coat","image_title":"s
 // Add code to parse the products variable here:
 const productsParsed = JSON.parse(products);
 
+console.log(productsParsed[0].name);
+
+
 const item = '{"id":"530","name":"Bamboo Thermal Ski Coat","image_title":"ski-coat_lynda_29940","image":"https://hplussport.com/wp-content/uploads/2016/12/ski-coat_LYNDA_29940.jpg"}';
 
 // Add code to parse the item variable here:
-const itemParsed = JSON.parse(item);
+
+const itemParsed = JSON.parse(products);

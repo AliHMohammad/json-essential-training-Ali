@@ -6,7 +6,7 @@ const data = JSON.parse(rawData);
 
 const container = document.querySelector('.container');
 
-const template = (item) => `
+const template = (item) => /*html*/`
   <div class="item">
     <img src="${item.image}" alt="${item.name}" width="324" height="324">
     <h2>${item.name}</h2>

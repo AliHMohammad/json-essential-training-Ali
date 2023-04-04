@@ -22,7 +22,8 @@ let cart = [
 ];
 
 // Enter code to stringify the `cart` variable here:
-const cartJson = JSON.stringify(cart);
+const cartJSON = JSON.stringify(cart);
+
 
 let single = {
   productId: "530",
@@ -36,4 +37,5 @@ let single = {
 };
 
 // Enter code to stringify the `single` variable here:
-const singleJson = JSON.stringify(single);
+const singleJSON = JSON.stringify(single);
+//'{"productId":"530","itemKey":"34354b059d38a963ba3a1bed499f593d","itemName":"Bamboo Thermal Ski Coat","variations":{"sizeWomens":"medium","color":"periwinkle","price":99}}'
